@@ -1,9 +1,12 @@
-body {
-  font-family: JetBrains Mono;
-  margin: 0;
+html, body {
+  font-family: 'Courier New', Courier, monospace;
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  margin: 0;
+  min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos do body em uma coluna vertical */
 }
 
 header {
@@ -14,7 +17,7 @@ header {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a {
@@ -26,6 +29,7 @@ nav a {
 
 main {
   padding: 2rem;
+  flex: 1; /* Permite que o main ocupe o espaço disponível entre o header e o footer */
 }
 
 footer {
@@ -33,25 +37,22 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: absolute;
   width: 100%;
-  bottom: 0;
+  position: relative;
 }
 
 #profile {
-  width: 50px; /* Ajuste o tamanho da imagem */
-  height: auto; /* Mantém a proporção */
+  width: 50px;
+  height: auto;
   position: absolute;
-  top: 20px; /* Distância do topo */
-  left: 30px; /* Distância da esquerda */
+  top: 20px;
+  left: 30px;
   border-radius: 40px;
 }
 
 #logo {
   width: 50px;
   height: auto;
-  top: 400px;
-  left: 40px;
 }
 
 #logo-home {
@@ -60,4 +61,11 @@ footer {
   position: absolute;
   left: 30px;
   top: 20px;
+}
+
+#profile-image {
+  border-radius: 200px;
+  display: block;
+  margin: 50px auto;
+  width: 300px;
 }
