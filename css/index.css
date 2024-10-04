@@ -7,6 +7,7 @@ html, body {
   min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
   display: flex;
   flex-direction: column; /* Organiza os elementos do body em uma coluna vertical */
+  text-align: justify;
 }
 
 header {
@@ -16,7 +17,14 @@ header {
   text-align: center;
 }
 
-p {
+h2 {
+  text-align: center;
+}
+
+.content {
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -32,10 +40,11 @@ main {
   flex: 1; /* Permite que o main ocupe o espaço disponível entre o header e o footer */
 }
 
-footer {
+.footer {
   background-color: #333;
   color: white;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
   width: 100%;
   position: relative;
