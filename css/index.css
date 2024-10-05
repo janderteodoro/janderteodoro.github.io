@@ -17,21 +17,53 @@ header {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-}
-
-.content {
-  text-align: justify;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+/*-----------------------------barra de navegação*---------------------------------------------*/
+nav a:hover::after,
+nav a.active::after {
+  background: #1cdd6f; /* Cor da animação */
+  height: 3px;
+}
+
+nav a:hover {
+  color: #1cdd6f; /* Muda a cor do texto ao passar o mouse */
+}
+
+nav a.active {
+  color: white; /* Cor do link ativo */
+}
+
+h2 {
+  text-align: center;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+.content {
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
